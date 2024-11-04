@@ -1,0 +1,44 @@
+User Management Screen Specification
+
+Overview
+The User Management Screen is intended for administrators to oversee user accounts. This interface facilitates adding new users, modifying existing user details, enabling or disabling accounts, and assigning various roles. This document delineates the specifications, user interface elements, and expected functionalities for the screen.
+
+Requirements
+
+Add New User: The system must provide functionality to add new users with essential fields such as username, display name, email, and roles.
+Edit User: Users' information should be editable by the system.
+Enable/Disable User: Users can be enabled or disabled, with the ability to filter out disabled accounts.
+Assign Roles: Each user may have multiple roles, which define their access permissions within the system.
+UI Components and Behavior
+
+Main Screen Layout:
+Header
+New User Button: Located at the top left, this button labeled "New User" opens a form in the right panel for adding a new user.
+Hide Disabled Users Checkbox: This checkbox, labeled "Hide Disabled Users," filters the displayed user list to show only active users when checked.
+Save User Button: The "Save User" button in the top right corner saves the details of the new or modified user.
+User List Table:
+The table displays the current users, with each column supporting sorting functionality.
+Columns:
+ID: A unique identifier assigned to each user.
+User Name: The username associated with each user.
+Email: The email address of the user.
+Enabled: A status indicating whether the user account is active or inactive.
+Actions:
+Users can sort the list by clicking on the column headers.
+Enabling the "Hide Disabled Users" option will conceal entries where the "Enabled" status is false.
+New User Panel:
+Upon clicking the "New User" button, a panel on the right side appears for entering new user details.
+Form Fields:
+Username: A mandatory text field for inputting a unique username.
+Display Name: A text field for entering the user's display name.
+Phone: A text field for capturing the user's phone number.
+Email: A required field for the user’s email, which must adhere to proper email format validation.
+User Roles: A dropdown menu that allows for multiple selections of roles.
+Enabled: A checkbox indicating if the user account is active.
+Save User Button: Once the mandatory fields are completed, clicking "Save User" will either add a new user or update an existing user's details.
+Page Behaviors
+
+Initial View: The page initially loads the user list with the "Hide Disabled Users" checkbox checked by default, displaying only active users.
+Adding a New User: Selecting "New User" resets the form fields to allow for the entry of a new user's information. Both the Username and Email fields are required to activate the "Save User" button.
+Editing an Existing User: Clicking on a user from the list populates their details in the right panel for editing. Changes can be saved by clicking the "Save User" button.
+Enabling/Disabling Users: Users can toggle their status with the "Enabled" checkbox. The "Hide Disabled Users" checkbox can be used to show or hide accounts that are inactive.
